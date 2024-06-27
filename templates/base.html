@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+  <head>
+    <title>{% block title %} {% endblock %}</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Lato">
+      <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+
+      <link rel="icon" type="image/png" href="{% static 'img/gbenda.png' %}" />
+
+  </head>
+
+  <body class="home">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!-- <a class="navbar-brand" href="#">Gbenda</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://blog.gbenda.org/">Blog</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'app' %}">Mobile App</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'community' %}">Communities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    {% block content %} {% endblock %}
+    <br/><br/>
+<footer id="footer" class="footer bg-dark text-white" style="position:fixed; bottom:0; right:0; left:0;">
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3"><a class="nav-link" href="#privacy" data-toggle="modal" data-target="#exampleModall">Privacy Notice</a>
+    </div>
+    <div class="col-sm-3">
+
+    </div>
+    <div class="col-sm-3"><a class="nav-link" href="#terms" data-toggle="modal" data-target="#exampleModal">Terms of Use</a></div>
+  </div>
+
+</footer>
+
+        <!-- Modal -->
+      <div class="modal fade" id="exampleModall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">Gbenda Intercessory Ministry Website Privacy Notice</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="font-weight-bold">Introduction</p>
+              <br/>
+            <p>  Hello there, welcome to Gbenda Intercessory Ministry <b class="font-weight-bold">(“Gbenda”, "We", "Us", or "Our")</b>.
+              <br/> We are a non-profit faith-based organisation that is committed to helping individuals who want to develop and sustain an intimate relationship with God. </p>
+           <br/>
+              <p >This Privacy Notice (“Notice”) governs your use of our website <a class="text-primary" href="https://gbenda.org/">https://gbenda.org/ </a>(‘the Website”) and our mobile application which can be installed from this website. We provide this Notice because you have a right to know what information we collect, why we collect it, how it is protected and used, and the circumstances under which it may be disclosed because your privacy is important to us.</p>
+              <br/>
+              <p class="font-weight-bold">Terms of Use</p>
+              <br/>
+              <p>You are required to comply with the provisions of our <b class="shadow text-warning">Terms of Use </b> in relation to the information provided.</p>
+              <br/>
+              <p class="font-weight-bold">Your data that we process</p>
+              <br />
+             <p> Personal data means any information about an individual from which that person can be directly or indirectly identified. While on our website, we may collect and process the following information mainly to help us maintain our site:</p>
+              <br/>
+              <p>
+              <ul>
+              <li>a. Domain name of your internet service provider;</li>
+              <li>b. The time you visit our site;</li>
+              <li>c. IP address;</li>
+              <li>d. Your internet protocol for identification; and</li>
+              <li>e. The web pages you visited and the frequency.</li>
+            </ul></p>
+            <br/>
+             <p>All personal information such as name, account information, email address and password will be collected via our mobile app when you create an account.</p>
+              <br />
+              <p class="font-weight-bold"> How we use your data</p>
+              <br/>
+              <ul>
+                <li>● To keep our website and mobile app running;</li>
+                <li> ● To help us improve our services;</li>
+                <li>● To give personalised user support through our understanding of your preferences; and</li>
+                <li>● To send you daily prayer reminders and notifications where permitted;</li>
+              </ul>
+              <br />
+              <p class="font-weight-bold">Cookies</p>
+              <br/>
+             <p>Cookies are tools used to automatically collect information from you when you visit our website. Our website currently does not use cookies.</p>
+             <br/>
+             <p class="font-weight-bold">Lawful Bases for processing data</p>
+             <br />
+             <p>We are required to process your data under at least one of these lawful bases:</p>
+             <p>
+              <ul>
+                <li>● Consent: You have given explicit consent for us to process your data for a specific purpose.</li>
+                <li>● Legitimate interest: Processing your data is necessary for our legitimate interests or the legitimate interests of a third party, provided your rights and interests do not outweigh those interests.</li>
+                <li>● Contract: If the data processing is necessary for a contract with us or because we have asked you to take specific steps before entering that contract.</li>
+                <li> ● Legal obligation: If the processing of your data is necessary where there is a statutory obligation on us.</li>
+              </ul>
+                </p>
+              <br/>
+              <p class="font-weight-bold"> Why we process your data and the appropriate lawful bases</p>
+              <br />
+              <p>
+                <ul>
+                  <li> ● Based on legitimate interest and contract, we process the information we collect from your device to help us administer our services to you and also to help us improve.                  </li>
+                  <li>● Based on legitimate interest, we use your device information to analyse your use of our website and maintain and improve the functionality of our website.</li>
+                  <li>● Based on legitimate interest and legal obligation, we process your data to keep it safe and prevent fraud.</li>
+                  <li>● Based on legal obligation, we may also process data for purposes of interacting with regulators when they make inquiries about your device information or your use of our website.</li>
+                </ul>
+              </p>
+              <br />
+              <p class="font-weight-bold"> Know your rights</p>
+              <br />
+             <p> The regulatory framework for data protection in Nigeria provides you with the following rights as a data subject:</p>
+             <br/>
+             <p>
+              <ul>
+                <li> a. access personal data we hold about you by requesting a copy of the personal data we hold about you;</li>
+                <li> b. rectify such information where you believe it to be inaccurate;</li>
+                <li> c. restrict the processing of your data in certain circumstances;</li>
+                <li> d. object to the processing of your data where we intend to process such data for marketing purposes;</li>
+                <li> e. where feasible, receive all personal data you have provided to us—in a structured, commonly used, and machine-readable format—and transmit the information to another data controller;</li>
+                <li> f. request the erasure of your data (also known as the right to be forgotten);</li>
+                <li> g. withdraw your consent to the processing of your data; and</li>
+                <li> h. lodge a complaint with a relevant authority where you have reason to believe that we have violated the term(s) of this Privacy Notice. (You may complain or seek redress from us within 30 days from when you first detected the alleged violation).</li>
+              </ul>
+             </p>
+              <br />
+            <p> You may  seek to exercise any of the above rights at any time by sending us an email at <a href="mailto:info@gbenda.org" class="text-primary">info@gbenda.org</a></p>
+            <br/>
+            <p>The supervisory authority is the Nigerian Data Protection Commission (NDPC), and a complaint can be sent via email at <a href="mailto:info@ndpc.gov.org" class="text-primary">info@ndpc.gov.org</a> .</p>
+            <br/>
+            <p class="font-weight-bold"> Third-parties with whom we share your data with</p>
+            <br/>
+             <p>We will normally not share your information with anyone, however, we may disclose your information with legal and regulatory authorities when they request it. We do this when we believe it is reasonably necessary to comply with a law, regulation, order, subpoena, audit, or to protect the safety of any person, to address fraud, security or technical issues.</p>
+             <br/>
+            <p> Note that if you wish to prevent your device’s operating system from sharing your Personal Data with Gbenda or with the third party mentioned for profiling purposes, you can do so by setting up your device appropriately – namely, by changing the privacy settings on your device to disable/restrict any advertising tracking features. For more information on this, please see the following links:</p>
+             <br/>
+            <p>
+                <ul>
+                  <li>● iOS Devices: <a href="https://support.apple.com/en-us/HT202074;" class="text-primary">https://support.apple.com/en-us/HT202074;</a> </li>
+                  <br/>
+                  <li> ● Android Devices: <a href="https://support.google.com/ads/answer/2662922?hl=en" class="text-primary">https://support.google.com/ads/answer/2662922?hl=en</a></li>
+                </ul>
+              </p>
+              <br/>
+              <p class="font-weight-bold">How long we keep your data</p>
+              <br />
+              <p>As a data subject, you have the right to delete your account at any time and also contact us to erase all your personal data on our app. In any other case where we do not receive such requests, we shall keep your personal data and any other information we collect from you for as long as necessary to fulfil the purposes described in this Notice.</p>
+              <br/>
+              <p> In addition, we delete your data for sending newsletters and reminders once you unsubscribe from such communications.</p>
+             <br/>
+             <p> Please note that your data may be retained for a longer period, notwithstanding your request to remove your data, where there is a legal requirement to do so.</p>
+             <br/>
+             <p class="font-weight-bold">How your data is stored and secured</p>
+             <br/>
+             <p> We are very particular about preserving your privacy and protecting your data. We deploy reasonable and appropriate technical and organisational measures to keep your data safe. However, we cannot completely guarantee the security of any information you transmit via our website, as the internet is not an entirely secure place. Nevertheless, we are committed to doing our best to protect you.</p>
+            <br/>
+             <p> We protect your data using physical, technical, and administrative security measures to reduce the risks of loss, misuse, unauthorised access, disclosure, and alteration.</p>
+             <br/>
+             <p> Where there is an actual or suspected data breach capable of causing harm to your rights and freedoms, we will notify you without undue delay and use our best effort to remedy the breach promptly.</p>
+             <br />
+             <p class="font-weight-bold"> International transfer of data</p>
+             <br/>
+             <p>We currently do not transfer data abroad. However, where your personal data is to be transferred to a country outside Nigeria, we shall take adequate measures to ensure data security. Our data transfers to countries without adequate protection are subject to the conditions provided in the Nigeria Data Protection Act. The conditions may include:</p>
+             <br />
+             <p>
+              <ul>
+                <li> ● The receiving country is subject to a law, binding corporate rules, contractual clauses, code of conduct, or certification mechanism;</li>
+                <li> ● The receiving country has adequate protection mechanisms;</li>
+                <li> ● Your consent has been obtained;</li>
+                <li> ● The transfer is necessary for the performance of a contract between Us and you or implementation of pre-contractual measures taken at your request;</li>
+                <li> ● The transfer is necessary to conclude a contract between Us and the third party in your interest;</li>
+                <li> ● The transfer is necessary for reason of public interest;</li>
+                <li> ● The transfer is for the establishment, exercise or defence of legal claims; or</li>
+                <li> ● The transfer is essential to protect your vital interests or other persons, where the data subject is physically or legally incapable of giving consent.</li>
+              </ul>
+             </p>
+             <br />
+             <p>  Please contact us to obtain relevant information regarding your data transfers to third countries (including the appropriate transfer mechanisms).</p>
+             <br />
+             <p class="font-weight-bold">Communications with you</p>
+             <br />
+              <p>We only send newsletters to you with your consent. You may choose to opt out of our emails by clicking on the ‘unsubscribe' button at the bottom of the page.</p>
+              <br/>
+              <p class="font-weight-bold">Complaints</p>
+              <br />
+             <p>If you are concerned about an alleged breach of data protection law or any other regulation by us, you can contact us at <a href="mailto:info@gbenda.org" class="text-primary">info@gbenda.org</a></p>
+             <br/>
+              <p>Please be informed that you may complain to the relevant data protection authority if your complaints are not satisfactorily addressed.</p>
+              <br/>
+              <p class="font-weight-bold">Changes to this Notice</p>
+              <br/>
+              <p>We update our privacy notice from time to time. We will notify our users when we make a change, and visitors will know this by checking the last date of update on this page whenever they visit.</p>
+              <br/>
+              <p class="font-weight-bold">Contact Us</p>
+              <br/>
+             <p >If you have any questions relating to this Notice, your rights under this Notice, or are not satisfied with how we manage your personal data, kindly reach out to us at <a href="mailto:info@gbenda.org" class="text-primary">info@gbenda.org</a> .</p>
+                <br/>
+             <p class="font-weight-bold">Date: 1st July, 2023</p>
+                <br/>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">I Understand</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <!-- Modal terms-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">Gbenda Intercessory Ministry Terms of Use</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                 <div class="modal-body">
+                <p>
+                  These Terms of Use (the "Terms") represent a legally binding contract between you and Gbenda Intercessory Ministry <b class="font-weight-bold">("Gbenda", "we", or "us")</b>. By accessing or using content; services and materials on Gbenda’s website located at <a href="https://gbenda.org/" class="text-primary">https://gbenda.org/</a> (the "Website"), any of the services provided therein (collectively, the "Services") and the materials may include logos, text graphics, videos, images, photos, software and other content (collectively, the "Materials"), you agree that you have read, understood, accept and agree to be bound by these Terms. If you do not agree with any of these Terms, do not access or otherwise make use of Gbenda’s services.
+                </p>
+                <br/>
+                <p class="font-weight-bold"> Nature and Applicability of Terms</p>
+                <br/>
+                <p>These Terms of Use (as amended from time to time by Gbenda in its sole discretion) govern the use of the Service and, upon your acceptance, constitute a binding agreement between you and Gbenda Prayer Ministry. Please read these Terms of Use carefully before accessing or using the Service.</p>
+                <br/>
+                <p>If you agree to each of the Terms of Use, check the “I ACCEPT” or “I AGREE” button at the bottom of these Terms of Use.</p>
+                <br/>
+                <p class="font-weight-bold">About Us</p>
+                <br/>
+                <p>Gbenda Intercessory Ministry <b class="font-weight-bold">(“Gbenda”, “We”, “Us”, or “Our”)</b> is a non-profit faith-based organisation that is committed to helping individuals who want to develop and sustain an intimate relationship with God. We operate mainly from a mobile app which can be installed on your mobile phones. On our platform, you can interact with other christians and ask questions about your faith. The goal of Gbenda is to show people the way to accessing eternal life.</p>
+                <br/>
+                <p>Gbenda may vary the Services from time to time at its absolute discretion, and the users shall be notified of any such variations where necessary. Any changes will be posted on the Website. This “Terms of Use” is an Agreement between you and Gbenda. It details Gbenda’s obligations to you.</p>
+                <br/>
+                <p class="font-weight-bold">Privacy Notice</p>
+                <br/>
+                <p>Gbenda Intercessory Ministry is committed to managing your Personal Information in line with global industry best practices. You can read our <b class="shadow text-warning">Privacy Notice</b> to understand how we use your information and the steps we take to protect it.</p>
+                <br/>
+                <p class="font-weight-bold">Registration</p>
+                <br/>
+                <p>To use our Platform, you have to download our mobile app, where you will be required to create an account. To create an account on the app, you will provide us with certain information that personally identifies you, such as your email, full name, and password.</p>
+                <br/>
+                <p>To use our Platform, you have to download our mobile app, where you will be required to create an account. To create an account on the app, you will provide us with certain information that personally identifies you, such as your email, full name, and password.</p>
+                <br/>
+                <p> Where necessary, Users must seek professional or specialist advice before taking, or refraining from, any action on the basis of the content on our site.</p>
+                <br/>
+                <p class="font-weight-bold">Eligibility for our service</p>
+                <br/>
+                <p>By using our Service, you represent and warrant that you or your authorised representative have attained the age of majority where you reside (18 years of age in most jurisdictions) and are otherwise capable of entering into binding contracts, including this Terms of Use. If you are using the Service on behalf of another party, you represent and warrant that you have the authority to act on behalf of that party and to bind that party to this Terms of Use. If you are using this Service on behalf of a party under the age of majority, you certify that you have the authority to use this Service on their behalf.</p>
+                <br/>
+                <p class="font-weight-bold">Identity Authentication</p>
+                <br/>
+                <p>We use many techniques to identify users when they register on the platform. Verification of Users is only an indication of the increased likelihood that a User's identity is correct. You authorise us to, directly or through third parties, make any inquiries we consider necessary to validate your registration. This may include verifying the information you provide against third-party databases. In addition, we reserve the right to employ other means of verification of authenticity for transactions we deem suspicious or for accounts conducting high value or high volume transactions to ensure the integrity of the transactions and we may thus delay the execution of such instructions.</p>
+                <br/>
+                <p class="font-weight-bold">Change of Information</p>
+                <br/>
+                <p>In the event that you change any information provided to us at registration, including your address, you agree to notify us within 7 (seven) days of such change. We may be unable to respond to you if you contact us from an address, telephone number, or email account that is not registered with us.</p>
+                <br/>
+                <p class="font-weight-bold">Representations and Warranties</p>
+                <br/>
+               <p>You represent and warrant to Gbenda Intercessory Ministry that:</p>
+               <br/>
+               <ul>
+                <li>● You have full power and authority to enter into, execute, deliver and perform this Agreement;</li>
+                <li>● You will comply with this Agreement and all applicable local, state, national, and international
+                  laws, rules, and regulations;</li>
+                <li>Any information you provide to us, both when you register and in the future, is and will be
+                  true, accurate, current, and complete;</li>
+                <li>● You do not use the Services to conduct a Restricted Business, transact with any Restricted
+                  Business, or enable any individual or entity (including you) to benefit from any Restricted
+                  Business;</li>
+                <li>● Your employees, contractors and agents are acting consistently with this Agreement;</li>
+                <li>● You comply with the Documentation;</li>
+                <li>● You will keep all information up-to-date and;</li>
+                <li>● You accept and agree to these Terms.</li>
+               </ul>
+               <br/>
+               <p class="font-weight-bold">Account Security</p>
+               <br/>
+               <p>You agree not to allow anyone else to access or use your password details and comply with all reasonable instructions we may issue regarding account access and security. In the event you share your password details, Gbenda will not be liable to you for losses or damages. You will also take all reasonable steps to protect the security of the personal electronic device through which you access Gbenda’s Services (including, without limitation, using PIN and/or password-protected personally configured device functionality to access Gbenda’s services and not sharing your device with other people). You are responsible for securely managing your password(s) for the Services and to contact Gbenda if you become aware of any unauthorised access to your Account.</p>
+               <br/><p>You hereby grant us the right to conduct any investigation, in any manner, we deem fit, on your background and operations, including but not limited to credit background checks, banking relationships and financial
+                history. In addition, you hereby give us your consent to disclose the details of any investigation conducted pursuant to this clause, to the Payment scheme, processors, Bank partners and/or regulators, without recourse to you.
+               </p>
+              <br/>
+              <p class="font-weight-bold">Responsibilities</p>
+              <br/>
+              <p>By agreeing to these terms of use, you agree to the following responsibilities:</p>
+              <br/>
+              <ul>
+                <li>a. You are responsible for all use of the site and for all use of your Credentials, including use by others to
+                  whom you have given your credentials.</li>
+                <li>b. You shall refrain from the use of obscene or abusive words in the chat room and shall respond to
+                  questions with utmost respect and decency.</li>
+                <li>c. You agree that you shall not copy, modify, adapt, translate, or reverse engineer any portion of the site,
+                  its content or materials, and/or the services.</li>
+                <li>d. You agree that you shall not create user accounts by automated means or under false or fraudulent
+                  pretences.</li>
+                <li>e. It is within your responsibility to refrain from collecting or storing personal data about other users in
+                  connection with the prohibited activities contained within this agreement.</li>
+                <li>f. You shall not use any means, including software means, to conduct web scraping of any portion of the
+                  site, its content or materials, and/or the services.</li>
+                <li>g. You shall not access, retrieve, or index any portion of the site and/or the services to construct or
+                  populate a searchable database of reviews related to the services provided.</li>
+                <li>h. You shall promptly update us with any changes to your account details.</li>
+              </ul>
+              <br/>
+              <p class="font-weight-bold">Unacceptable Use</p>
+              <br/>
+              <p>You shall not permit any person using your Device or Account to:</p>
+              <br/>
+              <ul>
+                <li>● use this Platform in a way that causes or could cause damage or restrict the availability or accessibility
+                  of the Platform;</li>
+                <li>● store, copy, transmit, publish or distribute any computer virus, spyware, Trojan horse, worm, keystroke
+                  logger or other malicious software via this Platform;</li>
+                <li>● conduct any fraudulent or illegal activities via the Platform;</li>
+                <li>● Copy, rent, lease, sell, transfer, assign, sublicense, disassemble, reverse engineer or decompile (except
+                  if expressly authorised by Gbenda Intercessory Ministry or by applicable statutory law), modify or alter
+                  any part of the Services;</li>
+                <li>● Violate the contractual, personal, intellectual property or other rights of any party, including by using,
+                  uploading, transmitting, distributing, or otherwise making available any information or material made available through the Services in any manner that infringes any copyright, trademark, patent, trade secret, or other rights of any party (including rights of privacy or publicity); Improperly use support channels or complaint buttons to make false reports to Gbenda Intercessory Ministry;</li>
+                <li>● Encourage any third party to (i) directly or indirectly generate usage, queries, impressions, or clicks through any automated, deceptive, fraudulent, or other invalid means; (ii) edit or modify any tag or remove, obscure or minimise any tag in any way; or (iii) engage in any action or practice that reflects poorly on Gbenda or otherwise disparages or devalues Gbenda's reputation or goodwill;</li>
+                <li>● Make representations (with respect to Gbenda) that are not approved in advance and in writing by Gbenda. You shall obtain Gbenda's prior written approval to the content of any promotional message and with respect to any use of Gbenda's trade name and/or trademarks and/or designs in connection with the Services and Materials;</li>
+                <li>● Violate any applicable laws or regulations, or encourage or promote any illegal activity, including, but not limited to, copyright infringement, trademark infringement, defamation, invasion of privacy,/identity theft, hacking, cracking or distribution of counterfeit software, or cheats or hacks for the Services; </li>
+                <li>● Attempt to use the Services on or through any other platform or third-party service provider that Gbenda does not authorise. Any such use is at your own risk and may subject you to additional or different terms. Gbenda takes no responsibility for your use of the Services through any platform or third-party service provider that is not authorised by it;</li>
+                <li>● Attempt to interfere with, hack into or decipher any transmissions to or from the servers for the Services;</li>
+                <li>● Interfere with the ability of others to enjoy using the Services, including disruption, overburden or aid the disruption or overburdening of the Services’ servers, or take actions that interfere with or materially increase the cost to provide the Services for the enjoyment of all its users;
+                </li>
+                <li>● You hereby understand and agree that if fraudulent, unethical or abusive activity is associated with the operation of your Account, We have the right to apply restrictions to your Account and report it to the appropriate law enforcement agencies.</li>
+              </ul>
+              <br/>
+              <p>This list of prohibitions provides examples and is not exhaustive oe exclusive. Gbenda reserves the right to terminate your ability to use the Services (account deactivation) with or without cause and with or without notice, for any reason or no reason, or for any action that Gbenda determines is inappropriate or disruptive to the services or any other user of the services. Gbenda may report to law enforcement authorities any actions that may be illegal and any reports it receives of such conduct. When legally required or at Gbenda’s discretion, Gbenda will cooperate with law enforcement agencies and regulatory bodies in any investigation of alleged illegal activity on the Services or the internet.</p>
+              <br/>
+              <p class="font-weight-bold">Access and Interference</p>
+              <br/>
+              <p>You agree that you will not use any robot, spider, other automatic devices, or manual process to monitor or copy our web pages or the content contained herein without our prior express written permission. You agree that you will not use any device, software or routine to attempt to interfere with the proper working of the Gbenda’s site or any activities conducted on our site. You agree that you will not take any action that imposes an unreasonable or disproportionately large load on our infrastructure. Most of the information on our site is proprietary or licensed to us. You agree that you will not copy, reproduce, alter, modify, create derivative works, publicly display, or frame any content from our website without our prior express written permission.</p>
+              <br/>
+              <p class="font-weight-bold">Viruses</p>
+              <br/>
+              <p>We do not guarantee that the Websites will be secure or free from bugs or viruses. You are responsible for configuring your information technology, computer programme, phone, devices and platform in order to access the Websites and mobile app. You should use your own virus protection software. You must not misuse the Websites/mobile app by knowingly introducing viruses, trojans, worms, logic bombs or other material which is malicious or technologically harmful. You must not attempt to gain unauthorised access to the Websites, the server on which the Websites are stored or any server, computer or database connected to the Websites.</p>
+              <br/>
+              <p>We will not be liable for any loss or damage caused by a virus, distributed denial-of-service attack, or other technologically harmful material that may infect your computer equipment, computer programs, data or other proprietary material due to your use of our site or to your downloading of any content on it, or on any website linked to it.</p>
+              <br/>
+              <p class="font-weight-bold">Intellectual Property</p>
+              <br/>
+              <p class="font-weight-bold">● Our Content</p>
+              <br/>
+              <p>All content and materials, including but not limited to images, text, visual interfaces, information, data, and computer code, our summaries of the word of God, verse suggestions, provided by us through our Services (our "Content") and all related intellectual property rights are the property of Gbenda Intercessory Ministry and/or its third-party licensors. Our content is protected by Nigerian and international intellectual property
+                of prohibitions provides examples and is not exhaustive or exclusive. Gbenda reserves the right to
+                laws and treaties. You are permitted to use our content only on our Services. You may not copy, modify, sell, reproduce, distribute, republish, display, post, create derivative or collective works from, or transmit in any form (including in-line linking or mirroring) our content, in whole or in part, without our express prior written consent. You may not reverse engineer or reverse compile any of our Services or the technology used to operate our Services. Nothing in the Agreement or our Services grants you, by implication, estoppel or otherwise, any licence or right to use our content except as expressly stated in the Agreement.</p>
+              <br/>
+              <p class="font-weight-bold">● Our Partners' Intellectual Property</p>
+              <br/>
+              <p>Our Services may also display specific intellectual property, such as company, product, and service name and logos, owned by our partners (our "Partners' Intellectual Property"). Nothing in the Agreement or our Services grants you, by implication, estoppel, or otherwise, any licence or right to copy, modify, sell, reproduce, distribute, republish, display, post, create derivative works from, or transmit in any form (including in-line linking or mirroring) any of our Partners' Intellectual Property.</p>
+              <br/>
+              <p class="font-weight-bold">● Your Content</p>
+              <br/>
+              <p>Our services also depend on your individual content to function. This means that when you post prayer requests, questions, answers to questions from other users, notes, or prayer points, on our platform, such information is not considered our content but your content and, as such, it is not subject to any restriction.</p>
+              <br/>
+              <p class="font-weight-bold">Disclaimer: </p>
+              <br/>
+              <p class="font-weight-bold">● Services Disclaimer</p>
+              <br/>
+              <p>The content of the Services that you obtain or receive from Gbenda, and its employees, contractors, partners, sponsors, advertisers, licensors or otherwise through the Services are for your use (as described above) only.</p>
+              <br/>
+              <p class="font-weight-bold">● Disclaimer of Warranties</p>
+              <br/>
+              <p>We try to keep Gbenda available at all times, bug-free and safe. However, you use it at your own risk.</p>
+              <br/>
+              <p>Our Website and Services are provided “as is” without any express, implied and/or statutory warranties (including, but not limited to, any implied or statutory warranties of merchantability, fitness for a particular use or purpose, title, and non-infringement of intellectual property rights). Without limiting the generality of the foregoing, Gbenda Intercessory Ministry makes no warranty that our Website and Services will meet your requirements or that our Website will be uninterrupted, timely, secure, or error-free. No advice or information, whether oral or written, obtained by you through our Website or from Gbenda Prayer Ministry, its parents, subsidiaries, or other affiliated companies, or its or their suppliers (or the respective officers, directors, employees, or agents of any such entities) (collectively, "Gbenda Intercessory Ministry parties") shall create any warranty.</p>
+              <br/>
+              <p class="font-weight-bold">Limitation of Liability</p>
+              <br/>
+              <p>You agree to the limited liability clause to the maximum extent permitted by applicable law: Gbenda Intercessory Ministry will in no way be liable for any direct, indirect, incidental, punitive, consequential, special, or exemplary damages or damages relating to failures of telecommunications, the internet, electronic communications, corruption, security, loss or theft of data, viruses, spyware, loss of business, revenue, profits or investment, or use of software or hardware that does not meet Gbenda’s systems requirements. Gbenda shall also not be liable for any damages, including damages resulting from revenue loss, profit loss, use, data, goodwill, business interruption, fraudulent or illicit acts perpetrated by users or any other intangible losses (whether Gbenda has been advised of the possibility of such damages or not) arising out of Gbenda’s website or services (including, without limitation to inability to use or arising from the result of the use of Gbenda’s website or services) whether such damages are based on warranty, tort, contract, statute or any other legal theory.</p>
+              <br/>
+              <p class="font-weight-bold">Indemnification</p>
+              <br/>
+              <p>You agree that if you are in breach of this Agreement or the documents it incorporates by reference, or if you violate any law or the rights of a third party in connection with your use of the service, we shall not be responsible for any damage, loss, liability or third party claim you incur wholly or partly by your breach or violation.</p>
+              <br/>
+              <p>You agree to indemnify and hold Gbenda Intercessory Ministry and its officers, directors, employees, consultants, affiliates, agents, licensors, and business partners (collectively, the "Indemnified Entities") harmless from and against any and all costs, damages, liabilities, and expenses (including attorneys’ fees and costs of defence) Gbenda Intercessory Ministry or any other Indemnified Entity suffers in relation to, arising from, or for the purpose of avoiding, any claim or demand from a third party that your use of the Services or the use of the Services by any person on your behalf, violates any applicable law or regulation, or the copyrights, trademark rights or other rights of any third party.</p>
+              <br/>
+              <p class="font-weight-bold">Exclusions</p>
+              <br/>
+              <p>Some jurisdictions do not allow the exclusion of certain warranties or the limitation or exclusion of liability for certain damages. Accordingly, some of the above disclaimers and limitations of liability may not apply to you. To the extent that any Party may not, as a matter of applicable law, disclaim any implied warranty or limit its liabilities, the scope and duration of such warranty and the extent of the Gbenda Intercessory Ministry Party's liability shall be the minimum permitted under such applicable law.</p>
+              <br/>
+              <p class="font-weight-bold">Payment</p>
+              <br/>
+              <p>The use of our services is accessible to all at no cost.</p>
+              <br/>
+              <p class="font-weight-bold">Extended Non-use</p>
+              <br/>
+              <p>Your non-use of our platform for an extended period does not terminate this contract.</p>
+              <br/>
+              <p class="font-weight-bold">Applicable Law</p>
+              <br/>
+              <p>These Terms of Use shall be interpreted and governed by the laws of the Federal Republic of Nigeria.</p>
+              <br/>
+              <p class="font-weight-bold">Dispute Resolution</p>
+              <br/>
+              <p>Any dispute arising out of or relating to this Agreement, including any question regarding its existence, validity, contractual obligation, or termination by the Parties, shall be settled through amicable discussions between the Parties if any such dispute is not settled between the Parties within thirty (30) business days.</p>
+              <br/>
+              <p>If any such dispute is not settled amicably between the Parties within 30 (thirty) Business Days, then such dispute or claim shall be settled by the courts of Nigeria.</p>
+              <br/>
+              <p class="font-weight-bold">Notice</p>
+              <br/>
+              <p>We may give notice by means of a general notice on the Services, electronic mail to your email address in your Account provided in connection with your account.</p>
+              <br/>
+              <p>Such notice shall be deemed to have been given upon the expiration of 48 (forty-eight) hours after sending an email to you. You may give notice to Us, with such notice deemed given when Gbenda receives an email from you.</p>
+              <br/>
+              <p class="font-weight-bold">Termination</p>
+              <br/>
+              <p>You may terminate this Agreement by closing your Account.</p>
+              <br/>
+              <p>We may suspend your Account and your access to our Services or terminate this Agreement if:</p>
+              <br/>
+              <ul>
+                <li>● you do not comply with any of the provisions of this Agreement;</li>
+                <li>● we are required to do so by Law;</li>
+                <li> ● where a suspicious, abusive, or fraudulent activity occurs.</li>
+              </ul>
+              <br/>
+              <p>If you violate these Terms or any of our User T&Cs on the Website, Gbenda Intercessory Ministry reserves the right to issue you a warning regarding the violation or to terminate or suspend your use of the Services immediately. We may also prohibit your use of the website by blocking computers using your IP address from accessing the website or contacting your Internet service provider to request that they block your access to the website and/or bringing court proceedings against you where there has been a violation of these Terms of Use. You agree that Gbenda Intercessory Ministry does not need to provide you notice before terminating or suspending your use of the Services, but it may provide such notice at its sole discretion.</p>
+              <br/>
+              <p>You agree that you will comply fully with these Terms of Use and all applicable domestic and international laws, regulations, statutes, and guidelines that govern your use of the Services. Without limiting the foregoing and in recognition of the global nature of the Internet, you agree to comply with all local and international rules regarding online conduct. You also agree to comply with all applicable laws affecting the transmission of content or the privacy of individuals.</p>
+              <br/>
+              <p class="font-weight-bold">Force Majeure</p>
+              <br/>
+              <p>Gbenda Intercessory Ministry and its Affiliates will not be liable for any losses, damages, or costs you suffer, or delays in Gbenda or its Affiliates’ performance or non-performance, to the extent caused by a Force Majeure Event.</p>
+              <br/>
+              <p class="font-weight-bold">Severability</p>
+              <br/>
+              <p>Where any portion of this Terms of Use is deemed invalid or unenforceable either in whole or in part by any court or tribunal, such part shall be severed from the Terms of Use and shall not affect the validity or enforceability of any other part in this Terms of Use.</p>
+              <br/>
+              <p class="font-weight-bold">Assignment</p>
+              <br/>
+              <p>Gbenda Intercessory Ministry may transfer, sub-contract or otherwise deal with its rights and/or obligations under these terms and conditions without notifying you or obtaining your consent. You may not transfer, sub-contract or otherwise deal with your rights and/or obligations under these terms and conditions.</p>
+              <br/>
+              <p class="font-weight-bold">Updates, Modifications, and Amendments:</p>
+              <br/>
+              <p>As our technology evolves, we may need to update, modify, or amend our Terms of Use, tools, utilities, or general updates. We reserve the right to make changes to this Terms of Use at any time without notice to you.</p>
+              <br/>
+              <p>We advise that you check this page often, referring to the date of the last modification on the page to ensure you are familiar with the current version of the Terms of Use. If a User objects to any of the changes to the Terms of Use, the User must cease using our Website and/or Services immediately.</p>
+              <br/>
+              <p class="font-weight-bold">Complaints: </p>
+              <br/>
+              <p>If you have any complaints or reservations about us or any of the Services we provide, you may contact us via: <a href="mailto:https://gbenda.org/" class="text-primary">https://gbenda.org/</a></p>
+              <br/>
+            </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">I Agree</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+    function myFunction() {
+  var x = document.getElementById("hnd");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  </script>
+</body>
+
+
+
+</html>

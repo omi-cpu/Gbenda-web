@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Gbenda | Mobile App {% endblock %}
+{% block content %}
+
+      <header class="w-100 text-center">
+        <h1 class="h2 mt-5 font-weight-bold">Gbenda - The Mobile App</h1>
+    </header>
+
+      <!-- app intro-->
+      <section class="col-sm-12 d-md-flex flex-md-column justify-content-center align-items-center" id="app_intro">
+        <p>Gbenda is a mobile application available only on ios and android based devices. </p>
+        <div class="row mt-3 row-eq-height">
+            <article class="col-sm-1 text-justify"></article>
+            <article id="left" class="col-sm-5 text-justify">
+                  <br/>
+                  <p class="font-weight-bold">Aim</p>
+                  <br/>
+                  <ul>
+                    <li>Have a chain of intercessors across the globe.</li>
+                    <li>Showing people the way to access eternal life.</li>
+                    <li>Reminding ourselves of how much God loves us.</li>
+                  </ul>
+                  <br/>
+                <p class="font-weight-bold">Mission statement</p>
+                <br/>
+                <p>Our mission is using technology to support upwardly mobile people to grow and develop an intimate relationship with God, without any physical or mental boundaries.</p>
+            </article>
+            <article id="right" class="col-sm-5">
+               <br />
+               <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                <h1 class="w3-xlarge">Our Beta Is Live!!!</h1>
+                <hr class="w3-opacity">
+                <p>Download for free!</p>
+                <br/>
+               <a href="https://play.google.com/store/apps/details?id=org.capacitor.gbenda.app" target="_blank"><p><button class="w3-button w3-block w3-orange w3-round">Android <i class="fa fa-android"></i></button></p></a>
+               <br/>
+                <a href="https://testflight.apple.com/join/ZLsMqpDF" target="_blank"><p><button class="w3-button w3-block w3-gray w3-round">iOS <i class="fa fa-apple"></i> </button></p></a>
+              </div>
+            </article>
+            <article class="col-sm-1 text-justify"></article>
+        </div>
+        <br/>
+          <p><b class="font-weight-bold">Vision: </b>Expanding the Kingdom of God </p>
+    </section>
+
+
+      <!-- preview app -->
+      <section class="col-sm-12 d-sm-flex flex-sm-column justify-content-center align-items-center">
+                <video width="370" height="500" controls>
+                    <source src="{% static 'aud_vid/gbenda.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+    </section>
+
+    <!-- about app -->
+    <section class="col-sm-12 d-md-flex flex-md-column justify-content-center align-items-center">
+        <article>
+            <br />
+            <p> A sneek peak into the app's features 👀</p>
+             <br/>
+             <ul class="ab">
+                 <li>The My Notes feature allows us to write our feelings, mind, and what have not; just like a diary.</li>
+                 <br/><li>In the chat room, users can ask questions anonymously and get spirit lead answers to help us in our growth journey.</li>
+                 <br/><li>Prayer requests can be posted anonymously in the Intercession room, and we can always visit there to pray for the rest of the body that have dropped their needs.</li>
+                 <br/> <li>Each person can save prayer points, and keep track of when prayers have been answered to build faith.</li>
+                 <br/><li>We will study the word together, verse by verse on a daily basis.</li>
+             </ul>
+         </article>
+      </section>
+
+
+{% endblock %}

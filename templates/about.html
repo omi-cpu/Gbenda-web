@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Gbenda | About {% endblock %}
+{% block content %}
+
+      <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <p>About Us</p>
+              </div>
+
+          <div class="row">
+            <div class="col-sm-6 video-box align-self-baseline" data-aos="zoom-in" data-aos-delay="100">
+              <img src="{% static 'img/pray.jpeg' %}" class="img-fluid" alt="" >
+            </div>
+
+            <div class="col-sm-6 pt-3 pt-lg-0 content">
+              <h3>Gbenda Intercessory Ministry </h3>
+             <p>Gbenda Intercessory Ministry is a non-profit faith-based organization that is committed to helping individuals who want to develop and sustain an intimate relationship  with God.</p>
+             <br/>
+             <p>We are an online Christian Community created in January, 2023.  Our mission is to share helpful tips. </p>
+				 <br/>
+			<p>Jesus AS The Way, The Truth and The Life is the full inspiration behind the Mobile Application and Website. </p>
+             <br/>
+             <p>Our name “Gbenda” is from the Tiv language, of West Africa, meaning “ THE Way. ”</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End About Section -->
+
+
+{% endblock %}

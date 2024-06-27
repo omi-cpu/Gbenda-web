@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 2;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: auto;
+    background-color: transparent;
+    z-index: 5;
+    font-family: "Lato";
+    font-size: 1.4rem;
+}
+
+.navbar .nav-link {
+    color: rgba(0, 0, 0, 1);
+    transition: .4s;
+}
+
+.navbar .nav-link:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#home {
+    min-height: 100vh;
+}
+
+
+#contact {
+    /* position: absolute; */
+    /* top: 200%; */
+    height: auto;
+    width: 100%;
+
+}
+#app_intro {
+    margin-bottom: 30px;
+    height: auto;
+    width: auto;
+
+}
+
+  .ab li:before {
+    content: '✓✓  ';
+    color: orange;
+  }
+
+  .about{
+    margin-top: 5%;
+  }
+
+  .about .content {
+    font-size: 15px;
+  }
+
+  .about .content h3 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #263d4d;
+  }
+
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+
+
+
+
+  .contact .info-box {
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    padding: 20px 0 30px 0;
+  }
+
+  .contact .info-box i {
+    font-size: 32px;
+    color: #ff4a17;
+    border-radius: 50%;
+    padding: 8px;
+  }
+
+  .contact .info-box h3 {
+    font-size: 20px;
+    color: #777777;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+
+  .contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+
+  .section-bg {
+    background-color: #f0f4f8;
+  }
+
+  .section-title {
+    padding-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #5c8eb0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #ff8664;
+    margin: 4px 10px;
+  }
+
+  .section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #263d4d;
+  }
+
